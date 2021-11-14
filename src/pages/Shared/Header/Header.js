@@ -51,9 +51,9 @@ const Header = () => {
                         </ul>
                         {user?.email ?
                             <span className="navbar-text">
-                                <span style={{ color: "#FDF3F4" }}>{user?.displayName}</span>
+                                <span style={{ color: "teal" }}>{user?.displayName}</span>
                                 <img className="rounded-circle ms-2" style={{ width: "40px" }} src={user.photoURL} alt="" />
-                                <button onClick={logout} className="btn btn-success ms-2">LogOut</button>
+                                <button onClick={logout} className="btn btn-purchase ms-2">LogOut</button>
                             </span>
                             :
                             <span className="navbar-text">

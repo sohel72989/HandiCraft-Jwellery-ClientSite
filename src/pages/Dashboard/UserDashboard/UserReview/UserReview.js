@@ -28,6 +28,7 @@ const UserReview = () => {
                 <input className="w-50 mb-3 p-2" {...register("description")} placeholder="Description" />
                 <select className="w-50 mb-3 p-2" {...register("rating")}>
                     <option value="female">Rating Us</option>
+                    <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>

@@ -52,7 +52,7 @@ const ProductsUpdate = () => {
     }
     return (
         <div>
-            <h1>Product Update {id}</h1>
+            <h1 className="text-color">Product Update {id}</h1>
             <div>
                 <form onSubmit={handleUpdate} className="d-flex flex-column justify-content-center align-items-center">
                     <input className="w-50 mb-3" type="text" onChange={chaneImg} value={product?.img || ''} />

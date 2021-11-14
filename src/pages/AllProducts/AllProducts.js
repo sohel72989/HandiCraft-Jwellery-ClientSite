@@ -16,7 +16,7 @@ const AllProducts = () => {
             <Header></Header>
             <div className="container py-5 mt-5">
                 <h1 className="text-color">Our All Products</h1>
-                <p className="pb-3">Deep Impact Shaving Foam.Enriched with Black Carbon, it prepares your skin for a comfortable shave and provides a smooth razor glide, giving you a clean skin feeling to make a deep impact! Deep Impact Shaving Foam.</p>
+                <p className="pb-3">Jewellery or jewelry consists of decorative items worn for personal adornment, such as brooches, rings, necklaces, earrings, pendants, bracelets, and cufflinks. Jewellery may be attached to the body or the clothes. From a western perspective, the term is restricted to durable ornaments, excluding flowers for example. For many centuries metal such as gold often combined with gemstones, has been the normal material for jewellery, but other materials such as shells and other plant materials may be used..</p>
                 <div className="row row-cols-1 row-cols-md-3 g-4">
                     {
                         products.map(product => <div className="col text-start">

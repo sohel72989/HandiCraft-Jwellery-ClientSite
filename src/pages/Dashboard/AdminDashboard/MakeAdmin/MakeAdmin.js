@@ -30,7 +30,7 @@ const MakeAdmin = () => {
     }
     return (
         <div>
-            <h2>Make An Admin</h2>
+            <h2 className="text-color">Make An Admin</h2>
             <form onSubmit={makeAdminSubmit}>
                 <TextField
                     sx={{ width: "50%", m: 1 }}
@@ -39,7 +39,11 @@ const MakeAdmin = () => {
                     variant="standard"
                     type="email"
                     onBlur={handleOnBlur} /><br />
-                <Button sx={{ width: "50%", m: 1 }} variant="contained" type='submit'>Make Admin</Button>
+                <Button sx={{ width: "50%", m: 1 }} variant="contained" type='submit'
+                    style={{
+                        backgroundColor: 'mediumseagreen',
+                        color: 'white'
+                    }}>Make Admin</Button>
             </form>
             {success && <Alert sx={{ width: "50%", ml: "25%" }} severity="success">Admin Make successful </Alert>}
         </div>

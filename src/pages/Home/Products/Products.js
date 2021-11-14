@@ -14,9 +14,11 @@ const Products = () => {
 
     return (
         <div className="container py-5">
+
             <h1 className="text-color">Our Popular Products</h1>
-            <p className="pb-3">Deep Impact Shaving Foam.Enriched with Black Carbon, it prepares your skin for a comfortable shave and provides a smooth razor glide, giving you a clean skin feeling to make a deep impact! Deep Impact Shaving Foam.</p>
-            <div className="row row-cols-1 row-cols-md-3 g-4">
+            <p>Jewellery is one of the oldest types of archaeological artefact – with 100,000-year-old beads made from Nassarius shells thought to be the oldest.</p>
+
+            <div className="row row-cols-1 row-cols-md-3 g-4 pt-3">
                 {
                     products.slice(0, 6).map(product => <div className="col text-start">
                         <div className="card h-100 border-0">

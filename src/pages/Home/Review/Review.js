@@ -23,7 +23,9 @@ const Review = () => {
                                     <div className="card-body">
                                         <h5 className="card-title">{review.name}</h5>
                                         <p className="card-text">{review.description}</p>
-                                        <Rating name="read-only" value={review.rating} readOnly />
+                                        <Rating name="read-only" style={{
+                                            color: 'goldenrod'
+                                        }} value={review.rating} readOnly />
                                     </div>
                                 </div>
                             </div>

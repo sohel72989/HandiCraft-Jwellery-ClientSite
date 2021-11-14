@@ -42,29 +42,31 @@ function Dashboard(props) {
     };
 
     const drawer = (
-        <div style={{ backgroundColor: "#006885", height: "100vh", color: "white" }}>
+        <div style={{ backgroundColor: "#243238", height: "100vh", color: "lightgray" }}>
             <Toolbar >
-                <h4 className="text-bold d-inline" style={{ color: "tomato" }}>JWELLERY.COM</h4>
+                <h4 className="text-bold d-inline" style={{ color: "lightgreen" }}>JWELLERY.COM</h4>
             </Toolbar>
             <Divider />
 
             {
                 admin ?
                     <Box>
-                        <Link to={`${url}/manageAllOrders`}><Button color="inherit" className="w-100 text-white text-decoration-none py-2 mb-2">Manage All Orders</Button></Link>
-                        <Link to={`${url}/addProduct`}><Button color="inherit" className="w-100 text-white text-decoration-none py-2 mb-2">Add Product</Button></Link>
-                        <Link to={`${url}/manageAllProducts`}><Button color="inherit" className="w-100 text-white text-decoration-none py-2 mb-2">Manage All Products</Button></Link>
-                        <Link to={`${url}/makeAdmin`}><Button color="inherit" className="w-100 text-white text-decoration-none py-2 mb-2">Make Admin</Button></Link>
+                        <Link to={`${url}/manageAllOrders`} className="text-decoration-none"><Button color="inherit" className="w-100 text-white py-2 mb-2">Manage All Orders</Button></Link>
+                        <Link to={`${url}/addProduct`} className="text-decoration-none"><Button color="inherit" className="w-100 text-white py-2 mb-2">Add Product</Button></Link>
+                        <Link to={`${url}/manageAllProducts`} className="text-decoration-none"><Button color="inherit" className="w-100 text-white py-2 mb-2">Manage All Products</Button></Link>
+                        <Link to={`${url}/makeAdmin`} className="text-decoration-none"><Button color="inherit" className="w-100 text-white py-2 mb-2">Make Admin</Button></Link>
                     </Box>
                     :
                     <Box>
-                        <Link to={`${url}`}><Button color="inherit" className="w-100 text-white text-decoration-none py-2 mb-2">Dashboard</Button></Link>
-                        <Link to={`${url}/pay`}><Button color="inherit" className="w-100 text-white text-decoration-none py-2 mb-2">Pay</Button></Link>
-                        <Link to={`${url}/myOrders`}><Button color="inherit" className="w-100 text-white text-decoration-none py-2 mb-2">My Orders</Button></Link>
-                        <Link to={`${url}/userReview`}><Button color="inherit" className="w-100 text-white text-decoration-none py-2 mb-2">Review</Button></Link>
+                        <Link to={`${url}`} className="text-decoration-none"
+                        ><Button color="inherit"
+                            className="w-100 text-white py-2 mb-2">Dashboard</Button></Link>
+                        <Link to={`${url}/myOrders`} className="text-decoration-none"><Button color="inherit" className="w-100 text-white py-2 mb-2">My Orders</Button></Link>
+                        <Link to={`${url}/pay`} className="text-decoration-none"><Button color="inherit" className="w-100 text-white py-2 mb-2">Payment</Button></Link>
+                        <Link to={`${url}/userReview`} className="text-decoration-none"><Button color="inherit" className="w-100 text-white py-2 mb-2">Review</Button></Link>
                     </Box>
             }
-            <Link to="/home"><button onClick={logout} className="btn btn-success w-100">LogOut</button></Link>
+            <Link to="/home"><button onClick={logout} className="btn btn-purchase w-100">LogOut</button></Link>
         </div>
     );
 
@@ -75,6 +77,10 @@ function Dashboard(props) {
             <CssBaseline />
             <AppBar
                 position="fixed"
+                style={{
+                    backgroundColor: '#243238'
+
+                }}
                 sx={{
                     width: { sm: `calc(100% - ${drawerWidth}px)` },
                     ml: { sm: `${drawerWidth}px` },
@@ -91,7 +97,9 @@ function Dashboard(props) {
                         <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" noWrap component="div">
-                        <Link to="/home"><Button color="inherit" className="w-100 text-white text-decoration-none py-2 mb-2 fs-30">Home</Button></Link>
+                        <Link to="/home" className="text-decoration-none"><Button color="inherit"
+                            className="w-100 text-white py-2 mb-2 fs-30"
+                        >Home</Button></Link>
                     </Typography>
                 </Toolbar>
             </AppBar>

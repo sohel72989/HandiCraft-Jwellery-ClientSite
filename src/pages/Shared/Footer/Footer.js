@@ -4,11 +4,13 @@ const Footer = () => {
     return (
 
         <div className="py-5"
-            style={{ backgroundColor: "#1E3741" }}>
+            style={{ backgroundColor: "#243238" }}>
             <div className="container text-light">
                 <h1 style={{ color: "lightgreen" }}>JWELLERY.COM</h1>
                 <hr />
-                <div className="row mt-4">
+                <div className="row mt-4" style={{
+                    color: 'lightgray'
+                }}>
                     <div className="col-md-4">
                         <div className="text-start">
                             <h4>GET IN TOUCH</h4>
@@ -36,7 +38,9 @@ const Footer = () => {
                     </div>
                 </div>
                 <hr />
-                <p>Made by : <a style={{
+                <p style={{
+                    color: 'lightgray'
+                }}>Made by : <a style={{
                     textDecoration: "none",
                     color: "tan"
                 }} href="https://www.facebook.com/rana72989/">Sohel Rana</a> </p>

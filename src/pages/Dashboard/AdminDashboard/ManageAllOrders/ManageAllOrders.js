@@ -29,7 +29,7 @@ const ManageAllOrders = () => {
     }
     return (
         <div>
-            <h1>Manage All Orders</h1>
+            <h1 className="text-color">Manage All Orders</h1>
             <div className="table-responsive">
                 <table className="table table-hover text-center">
                     <thead>

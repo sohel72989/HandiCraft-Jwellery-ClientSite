@@ -18,7 +18,7 @@ const AddProduct = () => {
     };
     return (
         <div>
-            <h1>add A Product</h1>
+            <h1 className="text-color">Add Product</h1>
             <div>
                 <form onSubmit={handleSubmit(onSubmit)} className="d-flex flex-column justify-content-center align-items-center mt-5">
                     <input className="w-50 mb-3 p-2"  {...register("img")} type="text" placeholder="image URL" required />
