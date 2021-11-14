@@ -1,0 +1,13 @@
+.img-height{
+    max-height: 300px;
+}
+.btn-purchase{
+    background-color:mediumseagreen;
+    color: azure;
+}
+.btn-purchase:hover{
+    color:blanchedalmond;
+}
+.text-color{
+    color: slategray;
+}

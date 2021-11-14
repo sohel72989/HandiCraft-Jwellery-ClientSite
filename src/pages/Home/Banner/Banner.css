@@ -1,0 +1,18 @@
+.banner-height{
+    height: 500px;
+    object-fit:cover;
+}
+.top-left {
+    color:slategray;
+    position: absolute;
+    width: 20%;
+    top: 25%;
+    left: 15%;
+  }
+  .font-style{
+      font-style:italic;
+
+  }
+  
+  
+
