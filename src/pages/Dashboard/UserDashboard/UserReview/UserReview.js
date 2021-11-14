@@ -9,7 +9,7 @@ const UserReview = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         // use AXIOS for post into data base
-        axios.post('http://localhost:5000/reviews', data)
+        axios.post('https://quiet-fortress-81213.herokuapp.com/reviews', data)
             .then(res => {
                 console.log(res);
                 if (res.data.insertedId) {

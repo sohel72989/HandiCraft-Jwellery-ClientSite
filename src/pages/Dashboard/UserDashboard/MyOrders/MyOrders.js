@@ -5,7 +5,7 @@ const MyOrders = () => {
     const { user } = useAuth();
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/orders/${user.email}`)
+        fetch(`https://quiet-fortress-81213.herokuapp.com/orders/${user.email}`)
             .then(res => res.json())
             .then(data => setProducts(data));
     }, [user]);
@@ -13,7 +13,7 @@ const MyOrders = () => {
     const handleDelete = id => {
         const areUsure = window.confirm('Are You Sure, Want To Delete?');
         if (areUsure) {
-            fetch(`http://localhost:5000/orders/${id}`, {
+            fetch(`https://quiet-fortress-81213.herokuapp.com/orders/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())

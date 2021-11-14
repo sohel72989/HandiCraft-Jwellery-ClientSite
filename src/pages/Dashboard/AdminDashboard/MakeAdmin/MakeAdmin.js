@@ -12,7 +12,7 @@ const MakeAdmin = () => {
     }
     const makeAdminSubmit = e => {
         const user = { email };
-        fetch('http://localhost:5000/users/admin', {
+        fetch('https://quiet-fortress-81213.herokuapp.com/users/admin', {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

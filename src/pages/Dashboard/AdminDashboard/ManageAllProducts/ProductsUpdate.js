@@ -5,7 +5,7 @@ const ProductsUpdate = () => {
     const { id } = useParams();
     const [product, setProduct] = useState();
     useEffect(() => {
-        fetch(`http://localhost:5000/products/${id}`)
+        fetch(`https://quiet-fortress-81213.herokuapp.com/products/${id}`)
             .then(res => res.json())
             .then(data =>
                 setProduct(data));
@@ -34,7 +34,7 @@ const ProductsUpdate = () => {
         setProduct(update);
     }
     const handleUpdate = e => {
-        fetch(`http://localhost:5000/products/update/${id}`, {
+        fetch(`https://quiet-fortress-81213.herokuapp.com/products/update/${id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
