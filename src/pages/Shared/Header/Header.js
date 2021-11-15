@@ -17,12 +17,12 @@ const Header = () => {
                     <NavLink className="navbar-brand" to="/">
                         <img
                             src={logo}
-                            width="40"
-                            height="40"
-                            className="d-inline-block align-top pt-2"
+                            width="60"
+                            height="50"
+                            className="d-inline-block align-top"
                             alt="React Bootstrap logo"
                         />
-                        <h1 className="text-bold d-inline" style={{
+                        <h1 className="d-inline" style={{
                             color: "lightgreen",
                             fontWeight: "bold",
                         }}>
