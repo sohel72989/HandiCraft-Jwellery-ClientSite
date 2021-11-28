@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import useAuth from '../../../../hooks/useAuth';
 
 const MyOrders = () => {
@@ -23,6 +24,7 @@ const MyOrders = () => {
                         alert('Delete Successful');
                         const remaining = products.filter(product => product._id !== id);
                         setProducts(remaining);
+                        
                     }
                 })
         }
@@ -38,6 +40,8 @@ const MyOrders = () => {
                             <th scope="col">Name</th>
                             <th scope="col">Email</th>
                             <th scope="col">Product Id</th>
+                            <th scope="col">ProductName</th>
+                            <th scope="col">Price</th>
                             <th scope="col">Phone</th>
                             <th scope="col">Address</th>
                             <th scope="col">Action</th>
@@ -50,9 +54,18 @@ const MyOrders = () => {
                                 <td>{product.name}</td>
                                 <td>{product.email}</td>
                                 <td>{product.productId}</td>
+                                <td>{product.productName}</td>
+                                <td>{product.price}</td>
                                 <td>{product.phone}</td>
                                 <td>{product.address}</td>
                                 <td><button onClick={() => handleDelete(product._id)} className="btn btn-danger">Cancel Order</button></td>
+                                <td>
+                                    { product.pay?'Paid':
+                                        <Link to={`/dashboard/pay/${product._id}`}>
+                                        <button className="btn btn-success">Pay Now</button>
+                                        </Link>
+                                    }
+                                </td>
                             </tr>)
                         }
                     </tbody>

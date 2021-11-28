@@ -16,7 +16,7 @@ const Banner = () => {
                 />
                 <div className="top-left">
                     <h2 className="font-style">BEAUTY ____That Impress____</h2>
-                    <p>Enhance your beauty with our jwellery that is both spectacular and affordable.Browes our catelog to find what you prefer..</p>
+                    <p>Enhance your beauty with our jwellery that is both spectacular and affordable.</p>
                     <button className="btn btn-purchase">Explore</button>
                 </div>
             </Carousel.Item>
@@ -28,7 +28,7 @@ const Banner = () => {
                 />
                 <div className="top-left">
                     <h2 className="font-style">JWELLERY ___That You'll Love___</h2>
-                    <p>We provide a wide variety of jwellery,From earring to bracelets.At Olimp,you will surely find even the rarest jwellery.</p>
+                    <p>We provide at Olimp,you will surely find even the rarest jwellery.</p>
                     <button className=" btn btn-purchase">Explore</button>
                 </div>
             </Carousel.Item>

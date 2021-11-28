@@ -9,7 +9,9 @@ const AllProducts = () => {
         fetch('https://quiet-fortress-81213.herokuapp.com/products')
             .then(res => res.json())
             .then(data =>
-                setProducts(data));
+                setProducts(data)
+            );
+        
     }, []);
     return (
         <div>

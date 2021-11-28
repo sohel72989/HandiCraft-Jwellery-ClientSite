@@ -51,6 +51,7 @@ const PlaceOrder = () => {
                                 <input className="w-50 mb-3" {...register("email")} type="email" value={user.email} required />
                                 <input className="w-50 mb-3"  {...register("productId")} type="text" value={productId} />
                                 <input className="w-50 mb-3"  {...register("productName")} type="text" value={product.name} />
+                                <input className="w-50 mb-3"  {...register("price")} type="text" value={product.price} />
                                 <textarea className="w-50 mb-3"  {...register("address")} type="text" placeholder="Address" required />
                                 <input className="w-50 mb-3"  {...register("phone")} type="number" placeholder="Phone Number" required />
                                 <input className="btn btn-purchase w-50 mb-3" type="submit" value="Place Order" />
